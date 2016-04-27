@@ -72,7 +72,7 @@ class VERSION:
 	REQUIRED_FIFE_VERSION = (REQUIRED_FIFE_MAJOR_VERSION, REQUIRED_FIFE_MINOR_VERSION, REQUIRED_FIFE_PATCH_VERSION)
 
 	## +=1 this if you changed the savegame "api"
-	SAVEGAMEREVISION = 75
+	SAVEGAMEREVISION = 76
 	SAVEGAME_LEAST_UPGRADABLE_REVISION = 48
 
 	@staticmethod
@@ -630,11 +630,13 @@ LANGUAGENAMES = _LanguageNameDict({
 	"da"    : (u'Danske', u'Danish'),
 	"de"    : (u'Deutsch', u'German'),
 	"en"    : (u'English', u'English'),
+	"eo"    : (u'Esperanto', u'Esperanto'),
 	"es"    : (u'Español', u'Spanish'),
 	"et"    : (u'Eesti', u'Estonian'),
 	"el"    : (u'Ελληνικά', u'Greek'),
 	"fi"    : (u'Suomi', u'Finnish'),
 	"fr"    : (u'Français', u'French'),
+	"frp"   : (u'Francoprovençâl', u'Franco-Provencal'),
 	"ga"    : (u'Gaeilge', u'Irish'),
 	"gl"    : (u'Galego', u'Galician'),
 	"hi"    : (u'मानक हिन्दी', u'Hindi'),

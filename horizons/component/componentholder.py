@@ -29,13 +29,14 @@ from horizons.component.depositcomponent import DepositComponent
 from horizons.component.fieldbuilder import FieldBuilder
 from horizons.component.healthcomponent import HealthComponent
 from horizons.component.inventoryoverlaycomponent import InventoryOverlayComponent
-from horizons.component.namedcomponent import NamedComponent, SettlementNameComponent, ShipNameComponent, PirateShipNameComponent
+from horizons.component.namedcomponent import NamedComponent, SettlementNameComponent, \
+     ShipNameComponent, PirateShipNameComponent, SoldierNameComponent, InhabitantNameComponent
 from horizons.component.restrictedpickup import RestrictedPickup
 from horizons.component.selectablecomponent import SelectableComponent
 from horizons.component.storagecomponent import StorageComponent
 from horizons.component.tradepostcomponent import TradePostComponent
 
-from horizons.world.production.producer import Producer, QueueProducer, UnitProducer
+from horizons.world.production.producer import Producer, QueueProducer, GroundUnitProducer, ShipProducer
 
 
 class ComponentHolder(object):
@@ -74,6 +75,8 @@ class ComponentHolder(object):
 	    'InventoryOverlayComponent': InventoryOverlayComponent,
 	    'NamedComponent': NamedComponent,
 	    'PirateShipNameComponent': PirateShipNameComponent,
+	    'SoldierNameComponent': SoldierNameComponent,
+	    'InhabitantNameComponent': InhabitantNameComponent,
 	    'ProducerComponent': Producer,
 	    'SettlementNameComponent': SettlementNameComponent,
 	    'ShipNameComponent': ShipNameComponent,
@@ -82,7 +85,8 @@ class ComponentHolder(object):
 	    'RestrictedPickup': RestrictedPickup,
 	    'SelectableComponent': SelectableComponent,
 	    'TradePostComponent': TradePostComponent,
-	    'UnitProducerComponent': UnitProducer,
+	    'ShipProducerComponent': ShipProducer,
+	    'GroundUnitProducerComponent': GroundUnitProducer,
 	}
 
 	def __init__(self, *args, **kwargs):
